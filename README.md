@@ -39,4 +39,4 @@ This project is about learning more TailwildCSS, Layout, TypeScript and calculat
 
 ### Demo
 
-You can see [SPLI TTER App](https://calculator-red-kappa.vercel.app)
+You can see [SPLI TTER App](https://spli-tter-ui-main.vercel.app)
