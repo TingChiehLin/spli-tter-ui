@@ -1,4 +1,4 @@
-export const tip_datas = [
+export const tipDatas = [
   {
     id: 0,
     text: "5%",

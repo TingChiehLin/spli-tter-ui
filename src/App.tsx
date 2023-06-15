@@ -1,9 +1,10 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { MdPerson, MdOutlineAttachMoney } from "react-icons/md";
+import TipBtn from "./components/TipBtn";
 import Button from "./components/Button";
 import { RootState } from "./store/index";
-import { tip_datas } from "./models/tip_datas";
+import { tipDatas } from "./models/tipDatas";
 
 import { amountActions } from "./store/index";
 
@@ -28,7 +29,7 @@ function App() {
     });
   };
 
-  const submitHandler = (event: FormEvent) => {
+  const submitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (userInput.billAmount === 0 || userInput.numberOfPeople === 0) {
@@ -89,8 +90,8 @@ function App() {
           <div className="mt-8">
             <div className="mb-4">Select Tip %</div>
             <div className="flex justify-start items-center flex-wrap gap-4">
-              {tip_datas.map((item) => (
-                <Button
+              {tipDatas.map((item) => (
+                <TipBtn
                   key={item.id}
                   text={item.text}
                   value={item.value}
@@ -143,18 +144,12 @@ function App() {
               {"$" + userInput.totalAmount}
             </div>
           </div>
-          <button
-            className="w-full h-16 font-bold text-xl rounded bg-teal-500 active:bg-teal-600"
-            onClick={submitHandler}
-          >
+          <Button type={"submit"}>
             <p>Submit</p>
-          </button>
-          <button
-            className="w-full h-16 font-bold text-xl rounded bg-teal-500 active:bg-teal-600"
-            onClick={handleRestAmount}
-          >
+          </Button>
+          <Button type={"button"} onClick={handleRestAmount}>
             <p>RESET</p>
-          </button>
+          </Button>
         </div>
       </div>
     </form>

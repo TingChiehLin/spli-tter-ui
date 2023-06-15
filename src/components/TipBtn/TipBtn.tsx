@@ -1,6 +1,6 @@
 import { FC, MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { amountActions, RootState } from "../store/index";
+import { amountActions, RootState } from "../../store/index";
 
 interface ButtonProp {
   text: string;
@@ -8,7 +8,7 @@ interface ButtonProp {
   isCustomed: boolean;
 }
 
-const Button: FC<ButtonProp> = ({ text, value, isCustomed }) => {
+const TipBtn: FC<ButtonProp> = ({ text, value, isCustomed }) => {
   const dispatch = useDispatch();
   const amount = useSelector((state: RootState) => state.amount);
 
@@ -48,4 +48,4 @@ const Button: FC<ButtonProp> = ({ text, value, isCustomed }) => {
   );
 };
 
-export default Button;
+export default TipBtn;

@@ -19,7 +19,7 @@ This project is about learning more TailwildCSS, Layout, TypeScript and calculat
 
 ## Tip Calculator Formula
 
-`Tip Amount = Bill * the percentage of tip %(the percentage of tip/100) / the number of people`
+`Tip Amount = (Bill * (the percentage of tip/100)) / the number of people`
 
 `Total Amount /person = Bill / the number of people + Tip Amount`
 
