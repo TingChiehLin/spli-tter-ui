@@ -3,9 +3,11 @@
 This project is about learning more TailwildCSS, Layout, TypeScript and calculation. An original design and inspired by
 [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
-## Learning with Jay Lin
+![SPLI TTER App](./public/demo.png)
 
-[Jay Lin XR](https://www.youtube.com/channel/UC1rMgKD4Rn-7aVcymjlvhfQ) tutorial
+### Demo
+
+You can see [SPLI TTER App](https://spli-tter-ui.vercel.app)
 
 ## What skills I use
 
@@ -36,7 +38,3 @@ This project is about learning more TailwildCSS, Layout, TypeScript and calculat
 ## Start Server
 
 [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Demo
-
-You can see [SPLI TTER App](https://spli-tter-ui.vercel.app)
